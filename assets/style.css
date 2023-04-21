@@ -11,15 +11,12 @@
 /* HEADER  */
 
 header{
-    width: 100%;
     height: 80px;
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
+    
     padding-inline: 10px;
 }
 
@@ -38,36 +35,63 @@ img{
     font-weight: bold;
     color: rgba(0,0,0,255);
 }
+
+
+select{
+    width: 120px;
+    padding: .2em;
+    border-radius: 10px;
+    border: 2px solid grey;
+    background-color: lightgray;
+}
+
 .play{
     height: 20px;
     width: 70px;
-    z-index: 99;
 }
 
+/* MAIN */
 
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1em;
+    padding: .5em;
     background-color: rgba(127,255,212,255);
-    height: 100vh;
+    height: 580px;
 }
+
 
 .grid{
+    
     display: flex;
     flex-wrap: wrap;
-    width: 550px;
-    height: 550px;
     box-sizing: content-box;
-    display: none;
-}
-
-
-.active{
-    display:flex;
     
 }
+
+.grideasy{
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: content-box;
+}
+
+.gridmedium{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: content-box;
+}
+
+
+.gridhard{
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: content-box;
+}
+
 .cell{
     width: 55px;
     height: 55px;
@@ -83,14 +107,13 @@ img{
     background-color: rgb(64, 76, 157);
 }
 
+
+/* FOOTER */
+
 footer{
-    width: 100%;
     height: 80px;
     background-color: white;
     display: flex;
     align-items: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
     padding-inline: 10px;
 }
