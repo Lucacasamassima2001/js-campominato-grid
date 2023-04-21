@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+
+/* HEADER  */
+
+header{
+    width: 95%;
+    height: 80px;
+    margin-inline: auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+img{
+    height: 60px;
+}
+
+
+.logo-text{
+    font-size: 2em;
+    font-weight: bold;
+    color: rgba(0,0,0,255);
+}
+.play{
+    height: 20px;
+    width: 70px;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    background-color: rgba(127,255,212,255);
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 550px;
+    height: 550px;
+    box-sizing: content-box;
+}
+
+.cell{
+    width: 55px;
+    height: 55px;
+    background-color: rgba(127,255,212,255);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.clicked{
+    background-color: rgb(64, 76, 157);
+}
+
+footer{
+    width: 95%;
+    margin-inline: auto;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
