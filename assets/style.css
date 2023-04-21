@@ -46,8 +46,11 @@ select{
 }
 
 .play{
-    height: 20px;
     width: 70px;
+    border: 2px solid grey;
+    background-color: lightgray;
+    padding: .2em;
+    border-radius: 10px;
 }
 
 /* MAIN */
