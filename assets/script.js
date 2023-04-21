@@ -14,7 +14,7 @@ const easy = parseInt(100);
 const medium = parseInt(81);
 const hard = parseInt(49);
 
-// BOTTONE CON FUNZIONE
+// BOTTONE CON FUNZIONI
 
 btnplay.addEventListener("click",
 function creategrid(){
@@ -27,22 +27,20 @@ function creategrid(){
     } if(value <= 81){
         elegrid.classList.remove("grideasy","gridhard")
         elegrid.classList.add("gridmedium")
-    }if (value <= 49){
-        
-        elegrid.classList.add("gridhard")
-       
+    }if (value <= 49){     
+        elegrid.classList.add("gridhard") 
     }
 
+    // CICLO CREAZIONE DELLE CELLE
 
     elegrid.innerHTML = ""
         for(let i = 1; i <= value; i++){
             elegrid.innerHTML += `<div class="cell"></div>`;
         } 
-        
-        
         const listcells = document.querySelectorAll(`.cell`);
         for(let i = 0; i < listcells.length ; i++){
             const cell = listcells[i];
+    // FUNZIONE COLORI
             cell.addEventListener("click",
             function colour(){
                 this.classList.toggle("clicked");
