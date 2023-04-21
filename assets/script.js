@@ -13,6 +13,22 @@ for(let i = 1; i <= 100; i++){
     elegrid.innerHTML += `<div class="cell"></div>`;
 }
 
+// SELEZIONO BOTTONE
+const btnplay = document.querySelector(".play")
+
+btnplay.addEventListener("click",
+function active(){     
+    elegrid.classList.add("active");
+}
+
+)
+
+
+
+
+
+
+
 
 // APPLICARE EVENT LISTENER A OGNI CELL
 const listcells = document.querySelectorAll(`.cell`);
